@@ -1,0 +1,25 @@
+/*
+ * Nicolas Salado
+ * FSUID: nas17b
+ */
+
+public class RollCalculator 
+{
+	public static void main(String[] args) 
+	{
+		final double PI = 3.14159;
+		
+		double diameter = 2, distance1 = 2, distance2 = 3; //declare variables
+		double totalDistance, numRolls;
+		double circumference;
+		totalDistance = distance1 + distance2; //find total distance in miles
+		totalDistance = totalDistance*5280; //convert to feet
+		circumference = diameter * PI; // find BB8's circumference
+		numRolls = totalDistance/circumference; //find number of rolls
+				
+		System.out.printf("BB-8 needs to roll " + numRolls + " times."); //print
+	}
+}
+
+
+
